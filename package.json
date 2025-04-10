@@ -1,0 +1,17 @@
+{
+  "name": "trailing-cursor",
+  "version": "1.0.0",
+  "description": "A smooth trailing cursor effect for any web app",
+  "main": "src/index.js",
+  "type": "module",
+  "keywords": [
+    "cursor",
+    "animation",
+    "trailing",
+    "mouse",
+    "npm",
+    "web"
+  ],
+  "author": "Sky",
+  "license": "MIT"
+}
