@@ -1,17 +1,30 @@
 {
   "name": "trailing-cursor",
   "version": "1.0.0",
-  "description": "A smooth trailing cursor effect for any web app",
+  "description": "A customizable animated cursor trail for modern web apps.",
   "main": "src/index.js",
   "type": "module",
   "keywords": [
     "cursor",
     "animation",
-    "trailing",
+    "trail",
     "mouse",
+    "effect",
     "npm",
-    "web"
+    "react",
+    "web",
+    "frontend"
   ],
-  "author": "Sky",
-  "license": "MIT"
+  "author": "skyshots",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/i-am-sky/trailing-cursor.git"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src"
+  ]
 }
