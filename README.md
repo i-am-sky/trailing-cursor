@@ -74,6 +74,51 @@ function App() {
   );
 }
 ```
+## Svelte Usage
+```svelte
+<script>
+    import { onMount, onDestroy } from 'svelte';
+    import { initCursor } from 'trailing-cursor';
+  
+    let wrapper;
+    let destroy;
+  
+    onMount(() => {
+      const computed = getComputedStyle(wrapper);
+      if (computed.position === 'static') {
+        wrapper.style.position = 'relative'; // Ensure relative positioning
+      }
+  
+      destroy = initCursor({
+        target: wrapper,
+        color: '#00f0ff',
+        size: '20px',
+        speed: 0.2,
+        hoverSize: '55px',
+      });
+    });
+  
+    onDestroy(() => {
+      destroy?.();
+    });
+  </script>
+  
+  <style>
+    .cursor-area {
+      min-height: 300px;
+      overflow: hidden;
+      border: 2px dashed #ccc;
+      padding: 2rem;
+      position: relative; /* ensure this exists if not handled in JS */
+    }
+  </style>
+  
+  <div bind:this={wrapper} class="cursor-area">
+    <h2>Move your cursor around me!</h2>
+    <button>Hover Me</button>
+  </div>
+  
+```
 ---
 ## 🧩 Options
 | Option      |   Type   |    Default    |                             Description                              |
