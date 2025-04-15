@@ -123,10 +123,12 @@ function App() {
 ## 🧩 Options
 | Option      |   Type   |    Default    |                             Description                              |
 |:------------|:--------:|--------------:|:---------------------------------------------------------------------|
+| `target`     | `element` |         | The DOM element within which the trailing cursor effect should be active. If not provided, defaults to `document.body`. |
 | `color`     | `string` |     "#fff"    | The color of the trail circles. Accepts any valid CSS color.        |
 | `size`      | `string` |    "20px"     | The base size of each trail circle. Use CSS units like `px`, etc.   |
-| `speed`     | `number` |      0.2      | Speed of the trail movement.|
+| `speed`     | `number` |      0.2      | Speed of the trail movement.                                        |
 | `hoverSize` | `string` |   "50px"      | Size of the trail when hovering over interactive elements.          |
+
 ---
 ## ✨ Features
 
